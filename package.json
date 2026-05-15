@@ -1,0 +1,14 @@
+{
+  "name": "opinion-gravity",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace @og/web run dev",
+    "dev:api": "npm --workspace @og/api run dev",
+    "build": "npm run build --workspaces --if-present"
+  }
+}
